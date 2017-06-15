@@ -27,4 +27,5 @@ npm run build
 * [yaf](http://www.php.net/manual/zh/book.yaf.php)
 * [ant-design](https://ant.design/docs/react/introduce-cn)
 * [react官方文档](https://facebook.github.io/react/docs/hello-world.html)
-* [react中文文档](https://hulufei.gitbooks.io/react-tutorial/content/introduction.html)
+* [react中文文档](https://hulufei.gitbooks.io/react-tutorial/content/introduction.html) 
+* [redux-saga中文文档](http://leonshi.com/redux-saga-in-chinese/docs/introduction/BeginnerTutorial.html?utm_source=tuicool&utm_medium=referral)
