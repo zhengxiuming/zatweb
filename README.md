@@ -1,6 +1,8 @@
 # zatweb
 一款结合了yaf、dva、ant-design的开发框架
 
+[安装配置php71](https://github.com/enorzw/zatweb/blob/master/Installphp71.md) 
+
 ``` bash
 git clone https://github.com/enorzw/zatweb.git
 ```
