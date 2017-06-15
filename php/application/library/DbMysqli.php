@@ -18,12 +18,13 @@ class DbMysqli
      */
     function __construct()
     {
-        $this->port = 3306;
-        $this->host = '127.0.0.1';
-        $this->username = 'root';
-        $this->password = 'root';
-        $this->dbname =  'upms';
-        $this->charset = 'UTF8';
+        $config = Yaf_Application::app()->getConfig();
+        $this->host = $config->database->params->host; //'127.0.0.1';
+        $this->port = $config->database->params->port;  //3306;
+        $this->username = $config->database->params->username; //'root';
+        $this->password = $config->database->params->password; //'root';
+        $this->dbname = $config->database->params->dbname; //'upms';
+        $this->charset = $config->database->params->charset; //'UTF8';
         
         $db = mysqli_connect($this->host, $this->username, $this->password, $this->dbname,$this->port);
         if(!$db){

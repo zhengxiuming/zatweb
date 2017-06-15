@@ -1,14 +1,12 @@
 <?php 
 
 class IndexController extends BaseController {
-   public function indexAction() {//默认Action
+   public function indexAction() {//默认Action  
        $mysql = new DbMysqli();
        if($mysql){
-            $row = $mysql->getLine("select * from roles");
-            $res = json_encode($row);
+            $row = $mysql->getLine("select * from roles"); 
             $this->__responseJson($row);
-       }
-       
+       } 
    }
 }
 
