@@ -4,14 +4,21 @@
 ``` bash
 git clone https://github.com/enorzw/zatweb.git
 ```
+安装
+``` bash
+npm install
+```
+配置php.ini设置yaf的环境
+``` ini
+[yaf] 
+yaf.environ=develop
+```
 编译
 ``` bash
 npm run build
 ```
-发布
-``` bash
-npm run pub
-```
+
+
 参考链接:
 
 * [dva](https://github.com/dvajs/dva)
