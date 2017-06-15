@@ -1,6 +1,4 @@
-<?php
-require_once APP_PATH.'/application/library/mysql/db_mysqli.php';
-require_once APP_PATH.'/application/library/mysql/db_funcs.php';
+<?php 
 
 class IndexController extends BaseController {
    public function indexAction() {//默认Action
@@ -13,4 +11,5 @@ class IndexController extends BaseController {
        
    }
 }
+
 ?>
