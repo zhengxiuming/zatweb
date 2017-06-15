@@ -23,9 +23,10 @@ npm run build
 
 参考链接: 
 * [dva的由来](https://github.com/sorrycc/blog/issues/6)
-* [dva](https://github.com/dvajs/dva)
-* [yaf](http://www.php.net/manual/zh/book.yaf.php)
-* [ant-design](https://ant.design/docs/react/introduce-cn)
+* [dva官方github](https://github.com/dvajs/dva)
+* [dva知识图谱](https://github.com/dvajs/dva-knowledgemap)
+* [yaf中文文档](http://www.php.net/manual/zh/book.yaf.php)
+* [ant-design中文文档](https://ant.design/docs/react/introduce-cn)
 * [react官方文档](https://facebook.github.io/react/docs/hello-world.html)
 * [react中文文档](https://hulufei.gitbooks.io/react-tutorial/content/introduction.html) 
 * [redux-saga中文文档](http://leonshi.com/redux-saga-in-chinese/docs/introduction/BeginnerTutorial.html?utm_source=tuicool&utm_medium=referral)
