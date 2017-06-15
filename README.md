@@ -29,3 +29,4 @@ npm run build
 * [react官方文档](https://facebook.github.io/react/docs/hello-world.html)
 * [react中文文档](https://hulufei.gitbooks.io/react-tutorial/content/introduction.html) 
 * [redux-saga中文文档](http://leonshi.com/redux-saga-in-chinese/docs/introduction/BeginnerTutorial.html?utm_source=tuicool&utm_medium=referral)
+* [es6 Generator函数](http://es6.ruanyifeng.com/#docs/generator)
