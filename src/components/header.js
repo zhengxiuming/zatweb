@@ -1,8 +1,10 @@
-import { Menu, Icon } from 'antd'; 
+import { Menu, Icon } from 'antd';
+import { React, Component } from 'react';
+
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-export default class HeaderComponent extends React.Component {
+export default class HeaderComponent extends Component {
   state = {
     current: 'mail',
   }
