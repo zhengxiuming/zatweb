@@ -1,5 +1,5 @@
-import { Menu, Icon } from 'antd';
-import { React, Component } from 'react';
+import { Menu, Icon } from 'antd'; 
+import { Component } from 'react';
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
