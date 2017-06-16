@@ -5,7 +5,7 @@ $ brew install php71
 $ brew services start php71
 ```
 nginx配置:
-``` conf
+``` nginx
 server {
     listen       8089;
     server_name  dev.local;
