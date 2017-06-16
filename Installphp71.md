@@ -3,7 +3,7 @@
 [安装brew工具](https://brew.sh/index_zh-cn.html)
 
 ``` bash
-$ brew isntall nginx
+$ brew install nginx
 $ brew install php71
 $ brew services start php71
 ```
