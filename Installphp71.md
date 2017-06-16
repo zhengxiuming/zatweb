@@ -1,11 +1,11 @@
 # mac安装PHP71
-```
+``` bash
 $ brew isntall nginx
 $ brew install php71
 $ brew services start php71
 ```
 nginx配置:
-```
+``` javascript
 server {
     listen       8089;
     server_name  dev.local;
