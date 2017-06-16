@@ -1,4 +1,7 @@
 # mac安装PHP71
+
+[安装brew工具](https://brew.sh/index_zh-cn.html)
+
 ``` bash
 $ brew isntall nginx
 $ brew install php71
@@ -13,9 +16,8 @@ server {
     index  index.html index.htm index.php;
 
     autoindex_localtime on;
-    #error_page  404 /404.html;
-    error_page   500 502 503 504  /50x.html;
-    location = /50x.html {root html;}
+    access_log off;
+     
     location ~ .*\.(php)?$ {
         fastcgi_pass 127.0.0.1:9000;
         fastcgi_index index.php;
@@ -24,11 +26,9 @@ server {
 
     location / {
         if (!-e $request_filename){
-                rewrite ^(.*)$ /index.php?s=$1 last;
-                break;
+            rewrite ^(.*)$ /index.php?s=$1 last;
+            break;
         }
-    }
-
-    access_log off;
+    } 
 }
 ```
