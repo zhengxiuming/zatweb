@@ -1,45 +1,41 @@
-import { Menu, Icon } from 'antd';
+import { Menu, Icon, Layout } from 'antd';
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 
 export default class HeaderComponent extends Component {
-  state = {
-    current: 'mail',
-  }
-  handleClick = (e) => {
-    this.setState({
-      current: e.key,
-    });
-  }
   render() {
     return (
-      <Menu
-        onClick={this.handleClick}
-        selectedKeys={[this.state.current]}
-        mode="horizontal"
-      >
-        <Menu.Item key="mail">
-          <Icon type="mail" />Navigation One
-        </Menu.Item>
-        <Menu.Item key="app" disabled>
-          <Icon type="appstore" />Navigation Two
-        </Menu.Item>
-        <SubMenu title={<span><Icon type="setting" />Navigation Three - Submenu</span>}>
-          <MenuItemGroup title="Item 1">
-            <Menu.Item key="setting:1">Option 1</Menu.Item>
-            <Menu.Item key="setting:2">Option 2</Menu.Item>
-          </MenuItemGroup>
-          <MenuItemGroup title="Item 2">
-            <Menu.Item key="setting:3">Option 3</Menu.Item>
-            <Menu.Item key="setting:4">Option 4</Menu.Item>
-          </MenuItemGroup>
-        </SubMenu>
-        <Menu.Item key="alipay">
-          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
-        </Menu.Item>
-      </Menu>
+      <Layout.Header>
+        <Menu
+          mode="horizontal"
+          theme="dark"
+          style={{ lineHeight: '64px', width: '100%' }}
+        >
+          <Menu.Item key="home">
+            <Link to="/"><Icon type="home" />主页</Link>
+          </Menu.Item>
+          <Menu.Item key="soft">
+            <Link to="/soft"><Icon type="code-o" />联宠软件</Link>
+          </Menu.Item>
+          <Menu.Item key="shop">
+            <Link to="/shop"><Icon type="shopping-cart" />联宠商城</Link>
+          </Menu.Item>
+          <Menu.Item key="examination">
+            <Link to="/examination"><Icon type="api" />检测中心</Link>
+          </Menu.Item>
+          <Menu.Item key="about">
+            <Link to="/about">关于</Link>
+          </Menu.Item>
+          <SubMenu key="sub4" title={<span style={{ float: 'right' }}><Icon type="setting" /><span>Navigation Three</span></span>}>
+            <Menu.Item key="9">Option 9</Menu.Item>
+            <Menu.Item key="10">Option 10</Menu.Item>
+            <Menu.Item key="11">Option 11</Menu.Item>
+            <Menu.Item key="12">Option 12</Menu.Item>
+          </SubMenu>
+        </Menu>
+      </Layout.Header>
     );
   }
 }

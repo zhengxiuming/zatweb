@@ -1,17 +1,26 @@
 import React from 'react';
-import { Router, Route } from 'dva/router';
+import { Router } from 'dva/router';
 import IndexPage from './routes/IndexPage';
-import HeaderComponent from './components/header';
+import AboutPage from './routes/AboutPage';
 
 function RouterConfig({ history }) {
+  const routes = [
+    {
+      path: '/',
+      component: IndexPage,
+    },
+    {
+      path: '/soft',
+      component: AboutPage,
+    },
+    {
+      path: '/about',
+      component: AboutPage,
+    },
+  ];
+
   return (
-    <div>
-      <HeaderComponent />
-      <Router history={history}>
-        <Route path="/" component={IndexPage} />
-        <Route path="/a" component={HeaderComponent} />
-      </Router>
-    </div>
+    <Router history={history} routes={routes} />
   );
 }
 

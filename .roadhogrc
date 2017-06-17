@@ -1,5 +1,6 @@
 {
   "entry": "src/index.js",
+  "disableCSSModules": true,
   "env": {
     "development": {
       "extraBabelPlugins": [
@@ -15,5 +16,12 @@
       ]
     }
   },
-  "theme": "./theme.js"
+  "theme": "./theme.js",
+  "proxy": {
+    "/public/index.php": {
+      "target": "http://localhost:8089/public/index.php",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  }
 }
