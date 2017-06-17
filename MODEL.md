@@ -5,7 +5,7 @@
 ```
 这个命令会做两件事：
 
-1.自动在models文件夹里生成count.js文件，如下代码所示，这是dva中model的标准结构：
+1.自动在models文件夹里生成count.js文件，如下代码所示，这是dva中model的标准结构：
 ``` javascript
 export default {
   namespace: 'count',
