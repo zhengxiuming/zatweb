@@ -1,7 +1,7 @@
 # zatweb
 一款结合了yaf、dva、ant-design的开发框架
 
-[安装配置php71](https://github.com/enorzw/zatweb/blob/master/Installphp71.md) 
+[安装配置php71](https://github.com/enorzw/zatweb/blob/master/doc/php71.md) 
 
 ``` bash
 git clone https://github.com/enorzw/zatweb.git
@@ -19,7 +19,9 @@ yaf.environ=develop
 ``` bash
 npm run build
 ```
+帮助：
 
+[dva-model的详细说明](https://github.com/enorzw/zatweb/blob/master/doc/model.md) 
 
 参考链接: 
 * [dva的由来](https://github.com/sorrycc/blog/issues/6)
